@@ -1,0 +1,60 @@
+Source: plano-theme
+Section: misc
+Priority: optional
+Maintainer: Mikhail Novosyolov <mikhailnov@nixtux.ru>
+Build-Depends: debhelper (>= 11),
+Standards-Version: 4.1.5
+Homepage: https://github.com/lassekongo83/plano-theme
+Vcs-Browser: https://github.com/mikhailnov/plano-theme
+Vcs-Git: https://github.com/mikhailnov/plano-theme.git
+
+Package: plano-theme
+Architecture: all
+Recommends: plano-theme-gnome-shell,
+            plano-theme-xfwm4,
+            plano-theme-openbox,
+            plano-theme-gtk2,
+            plano-theme-gtk3
+Description: Plano themes meta package
+ Dummy package that pulls Plano theme for:
+ - GNOME Shell (plano-theme-gnome-shell),
+ - XFWM4 (plano-theme-gnome-xfwm4),
+ - Openbox (plano-theme-gnome-openbox),
+ - GTK+2 (plano-theme-gnome-gtk2),
+ - GTK+3 (plano-theme-gnome-gtk3)
+
+Package: plano-theme-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Plano GNOME Shell desktop theme
+ Plano GNOME Shell desktop theme
+
+Package: plano-theme-xfwm4
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Plano XFWM4 theme
+ Plano theme for XFWM4 (XFCE window manager)
+ 
+Package: plano-theme-openbox
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Plano Openbox theme
+ Plano theme for Openbox
+
+Package: plano-theme-gtk2
+# TODO: does not it need any special gtk2 engines?
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Plano GTK+2 theme
+ Plano GTK+2 theme
+
+Package: plano-theme-gtk3
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Plano GTK+3 theme
+ Plano GTK+3 theme

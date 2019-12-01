@@ -1,0 +1,17 @@
+.debhelper/
+debhelper-build-stamp
+files
+plano-theme-gnome-shell.substvars
+plano-theme-gnome-shell/
+plano-theme-gtk2.substvars
+plano-theme-gtk2/
+plano-theme-gtk3.substvars
+plano-theme-gtk3/
+plano-theme-openbox.substvars
+plano-theme-openbox/
+plano-theme-xfwm4.substvars
+plano-theme-xfwm4/
+plano-theme.substvars
+plano-theme/
+tmp/
+
